@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (age < 18) {
+        printf("Group: Normal (Minor)\n");
+    } else if (age <= 60) {
+        printf("Group: Warning (Adult)\n");
+    } else {
+        printf("Group: Critical (Senior)\n");
+    }
+    return 0;
+}
